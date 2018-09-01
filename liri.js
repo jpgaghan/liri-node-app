@@ -5,6 +5,7 @@ var keys = require("./keys.js");
 var moment = require('moment');
 var fs = require("fs");
 var cmd=require('node-cmd');
+const chalk = require('chalk');
 var Spotify = require('node-spotify-api');
 
 var spotify = new Spotify(keys.spotify);
@@ -15,7 +16,7 @@ var argument= process.argv[3];
 var bandsintown = require('bandsintown')("codingbootcamp");
 
 for (i = 4; i<process.argv.length; i++) {
-    argument += `+ ${process.argv[i]}`
+    argument += `+${process.argv[i]}`
 }
 
 if (command === "movie-this") {
@@ -26,14 +27,14 @@ if (command === "movie-this") {
 
   if (!error && response.statusCode === 200) {
 
-    console.log(`${JSON.parse(body).Title}
-Release Year: ${JSON.parse(body).Year}
-IMDB Rating: ${JSON.parse(body).imdbRating}
-Rotten Tomatoes Rating: ${JSON.parse(body).Ratings[1].Value}
-Origin Country: ${JSON.parse(body).Country}
-Available Languages: ${JSON.parse(body).Language}
-Plot: ${JSON.parse(body).Plot}
-Actors: ${JSON.parse(body).Actors}`)
+    console.log(`${chalk.red(JSON.parse(body).Title)}
+Release Year: ${chalk.blue(JSON.parse(body).Year)}
+IMDB Rating: ${chalk.blue(JSON.parse(body).imdbRating)}
+Rotten Tomatoes Rating: ${chalk.blue(JSON.parse(body).Ratings[1].Value)}
+Origin Country: ${chalk.blue(JSON.parse(body).Country)}
+Available Languages: ${chalk.blue(JSON.parse(body).Language)}
+Plot: ${chalk.blue(JSON.parse(body).Plot)}
+Actors: ${chalk.blue(JSON.parse(body).Actors)}`)
   }
 });
 } else if (command === "concert-this") {
@@ -53,10 +54,10 @@ Date: ${moment(events[0].datetime).format('L')}`
     }
     trackdata = data.tracks.items[0];
     console.log(`
-Album: ${trackdata.album.name} 
-Artist: ${trackdata.album.artists[0].name} 
-Song Sample: ${trackdata.preview_url}
-Song Name: ${trackdata.name}`
+Album: ${chalk.blue(trackdata.album.name)} 
+Artist: ${chalk.blue(trackdata.album.artists[0].name)} 
+Song Sample: ${chalk.blue(trackdata.preview_url)}
+Song Name: ${chalk.blue(trackdata.name)}`
     )
 });
 } else if (command === "do-what-it-says") {
