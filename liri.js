@@ -2,6 +2,7 @@
 require("dotenv").config();
 
 var keys = require("./keys.js");
+var moment = require('moment');
 
 var Spotify = require('node-spotify-api');
 
@@ -34,7 +35,9 @@ if (command === "movie-this") {
 } else if (command === "concert-this") {
     bandsintown.getArtistEventList(argument)
   .then(function(events) {
-    console.log(events)
+    console.log(events[0].venue.name)
+    console.log(events[1].formatted_location)
+    console.log(moment(events[0].datetime).format('L'))
   });
 } else if (command === "spotify-this-song") {
     spotify.search({type: 'track', query: argument, limit: 1}, function(err, data) {
