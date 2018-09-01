@@ -19,50 +19,57 @@ for (i = 4; i<process.argv.length; i++) {
 }
 
 if (command === "movie-this") {
+    if (process.argv[3] === undefined) {
+        argument = `Mr.Nobody`
+    }
     request(`http://www.omdbapi.com/?t=${argument}&y=&plot=short&apikey=trilogy`, function(error, response, body) {
 
   if (!error && response.statusCode === 200) {
 
-    console.log(JSON.parse(body).Title);
-    console.log(JSON.parse(body).Year);
-    console.log(JSON.parse(body).imdbRating);
-    console.log(JSON.parse(body).Ratings[1].Value);
-    console.log(JSON.parse(body).Country);
-    console.log(JSON.parse(body).Language);
-    console.log(JSON.parse(body).Plot);
-    console.log(JSON.parse(body).Actors);
+    console.log(`${JSON.parse(body).Title}
+Release Year: ${JSON.parse(body).Year}
+IMDB Rating: ${JSON.parse(body).imdbRating}
+Rotten Tomatoes Rating: ${JSON.parse(body).Ratings[1].Value}
+Origin Country: ${JSON.parse(body).Country}
+Available Languages: ${JSON.parse(body).Language}
+Plot: ${JSON.parse(body).Plot}
+Actors: ${JSON.parse(body).Actors}`)
   }
 });
 } else if (command === "concert-this") {
-    bandsintown.getArtistEventList(argument)
-  .then(function(events) {
-    console.log(events[0].venue.name)
-    console.log(events[1].formatted_location)
-    console.log(moment(events[0].datetime).format('L'))
+    
+    bandsintown.getArtistEventList(argument).then(function(events) {console.log(`Venue Name: ${events[0].venue.name}
+Location: ${events[1].formatted_location}
+Date: ${moment(events[0].datetime).format('L')}`
+  )
   });
 } else if (command === "spotify-this-song") {
+    if (process.argv[3] === undefined) {
+        argument = `"The Sign" Ace of Base`
+    }
     spotify.search({type: 'track', query: argument, limit: 1}, function(err, data) {
     if (err) {
       return console.log('Error occurred: ' + err);
     }
-    trackdata = data.tracks.items[0]
-  console.log(trackdata.album.name); 
-  console.log(trackdata.album.artists[0].name); 
-  console.log(trackdata.preview_url)
-  console.log(trackdata.name); 
+    trackdata = data.tracks.items[0];
+    console.log(`
+Album: ${trackdata.album.name} 
+Artist: ${trackdata.album.artists[0].name} 
+Song Sample: ${trackdata.preview_url}
+Song Name: ${trackdata.name}`
+    )
 });
 } else if (command === "do-what-it-says") {
     fs.readFile("random.txt", "utf8", function (err, data) {
         if (err) {
         return console.log(err);
     }
-    console.log(data)
     data = data.replace(`"`, "");
     data = data.replace(`,`, "");
     cmd.get(
         `node liri.js ${data}`,
         function(err, data, stderr){
-            console.log('the current dir contains these files :\n\n',data)
+            console.log(data)
         }
     );
 });
