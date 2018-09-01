@@ -3,7 +3,8 @@ require("dotenv").config();
 
 var keys = require("./keys.js");
 var moment = require('moment');
-
+var fs = require("fs");
+var cmd=require('node-cmd');
 var Spotify = require('node-spotify-api');
 
 var spotify = new Spotify(keys.spotify);
@@ -49,8 +50,19 @@ if (command === "movie-this") {
   console.log(trackdata.album.artists[0].name); 
   console.log(trackdata.preview_url)
   console.log(trackdata.name); 
+});
+} else if (command === "do-what-it-says") {
+    fs.readFile("random.txt", "utf8", function (err, data) {
+        if (err) {
+        return console.log(err);
+    }
+    console.log(data)
+    cmd.get(
+        'node liri.js spotify-this-song iris',
+        function(err, data, stderr){
+            console.log('the current dir contains these files :\n\n',data)
+        }
+    );
+});
 
-
-
-  });
 }

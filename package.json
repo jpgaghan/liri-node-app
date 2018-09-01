@@ -19,8 +19,10 @@
   "homepage": "https://github.com/jpgaghan/liri-node-app#readme",
   "dependencies": {
     "bandsintown": "^1.0.1",
+    "child_process": "^1.0.2",
     "dotenv": "^6.0.0",
     "moment": "^2.22.2",
+    "node-cmd": "^3.0.0",
     "node-spotify-api": "^1.0.7",
     "request": "^2.88.0",
     "spotify": "^0.3.0"
