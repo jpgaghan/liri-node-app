@@ -57,6 +57,8 @@ if (command === "movie-this") {
         return console.log(err);
     }
     console.log(data)
+    data = data.replace(`"`, "");
+    data = data.replace(`,`, "");
     cmd.get(
         `node liri.js ${data}`,
         function(err, data, stderr){
