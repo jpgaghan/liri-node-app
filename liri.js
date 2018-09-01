@@ -58,7 +58,7 @@ if (command === "movie-this") {
     }
     console.log(data)
     cmd.get(
-        'node liri.js spotify-this-song iris',
+        `node liri.js ${data}`,
         function(err, data, stderr){
             console.log('the current dir contains these files :\n\n',data)
         }
