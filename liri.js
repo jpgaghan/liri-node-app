@@ -33,7 +33,20 @@ ${chalk.green('Available Languages')}: ${chalk.blue(JSON.parse(body).Language)}
 ${chalk.green('Plot')}: ${chalk.blue(JSON.parse(body).Plot)}
 ${chalk.green('Actors')}: ${chalk.blue(JSON.parse(body).Actors)}`)
         }
-        
+        fs.appendFile('log.txt', `
+${JSON.parse(body).Title}
+
+Release Year: ${JSON.parse(body).Year}
+IMDB Rating: ${JSON.parse(body).imdbRating}
+Rotten Tomatoes Rating: ${JSON.parse(body).Ratings[1].Value}
+Origin Country: ${JSON.parse(body).Country}
+Available Languages: ${JSON.parse(body).Language}
+Plot: ${JSON.parse(body).Plot}
+Actors: ${JSON.parse(body).Actors}
+        `, function (err) {
+            if (err) throw err;
+            console.log('Saved!');
+          }); 
     });
 } else if (command === "concert-this") {
     bandsintown.getArtistEventList(argument).then(function (events) {
@@ -42,6 +55,16 @@ ${chalk.green('Venue Name')}: ${events[0].venue.name}
 ${chalk.green('Location')}: ${events[1].formatted_location}
 ${chalk.green('Date')}: ${moment(events[0].datetime).format('L')}`
         )
+        fs.appendFile('log.txt', `
+${argument}
+
+Venue Name: ${events[0].venue.name}
+Location: ${events[1].formatted_location}
+Date: ${moment(events[0].datetime).format('L')}
+`, function (err) {
+    if (err) throw err;
+    console.log('Saved!');
+  });
     });
 } else if (command === "spotify-this-song") {
     if (process.argv[3] === undefined) {
@@ -53,13 +76,24 @@ ${chalk.green('Date')}: ${moment(events[0].datetime).format('L')}`
         }
         trackdata = data.tracks.items[0];
         console.log(`
+
 ${chalk.red(trackdata.name)}
 
 ${chalk.green('Album')}: ${chalk.blue(trackdata.album.name)} 
 ${chalk.green('Artist')}: ${chalk.blue(trackdata.album.artists[0].name)} 
 ${chalk.green('Song Sample')}: ${chalk.blue(trackdata.preview_url)}`
         )
-    });
+        fs.appendFile('log.txt', `
+${trackdata.name}
+        
+Album: ${trackdata.album.name} 
+Artist: ${trackdata.album.artists[0].name} 
+Song Sample: ${trackdata.preview_url}
+`, function (err) {
+            if (err) throw err;
+            console.log('Saved!');
+          });
+        });
 } else if (command === "do-what-it-says") {
     fs.readFile("random.txt", "utf8", function (err, data) {
         if (err) {

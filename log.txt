@@ -1,0 +1,109 @@
+Mr. Nobody
+
+        'Release Year': 2009
+        'IMDB Rating': 7.9
+        'Rotten Tomatoes Rating': 66%
+        'Origin Country': Belgium, Germany, Canada, France, USA, UK
+        'Available Languages': English, Mohawk
+        'Plot': A boy stands on a station platform as a train is about to leave. Should he go with his mother or stay with his father? Infinite possibilities arise from this decision. As long as he doesn't choose, anything is possible.
+        'Actors': Jared Leto, Sarah Polley, Diane Kruger, Linh Dan Pham
+        
+        Braveheart
+
+        'Release Year': 1995
+        'IMDB Rating': 8.4
+        'Rotten Tomatoes Rating': 76%
+        'Origin Country': USA
+        'Available Languages': English, French, Latin, Scottish Gaelic, Italian
+        'Plot': When his secret bride is executed for assaulting an English soldier who tried to rape her, Sir William Wallace begins a revolt against King Edward I of England.
+        'Actors': James Robinson, Sean Lawlor, Sandy Nelson, James Cosmo
+        Braveheart
+
+        'Release Year': 1995
+        'IMDB Rating': 8.4
+        'Rotten Tomatoes Rating': 76%
+        'Origin Country': USA
+        'Available Languages': English, French, Latin, Scottish Gaelic, Italian
+        'Plot': When his secret bride is executed for assaulting an English soldier who tried to rape her, Sir William Wallace begins a revolt against King Edward I of England.
+        'Actors': James Robinson, Sean Lawlor, Sandy Nelson, James Cosmo
+        
+        Braveheart
+
+        'Release Year': 1995
+        'IMDB Rating': 8.4
+        'Rotten Tomatoes Rating': 76%
+        'Origin Country': USA
+        'Available Languages': English, French, Latin, Scottish Gaelic, Italian
+        'Plot': When his secret bride is executed for assaulting an English soldier who tried to rape her, Sir William Wallace begins a revolt against King Edward I of England.
+        'Actors': James Robinson, Sean Lawlor, Sandy Nelson, James Cosmo
+        
+        Braveheart
+
+        Release Year: 1995
+        IMDB Rating: 8.4
+        Rotten Tomatoes Rating: 76%
+        Origin Country: USA
+        Available Languages: English, French, Latin, Scottish Gaelic, Italian
+        Plot: When his secret bride is executed for assaulting an English soldier who tried to rape her, Sir William Wallace begins a revolt against King Edward I of England.
+        Actors: James Robinson, Sean Lawlor, Sandy Nelson, James Cosmo
+        
+        Crazy Rich Asians
+
+        Release Year: 2018
+        IMDB Rating: 7.7
+        Rotten Tomatoes Rating: 93%
+        Origin Country: USA
+        Available Languages: English
+        Plot: This contemporary romantic comedy, based on a global bestseller, follows native New Yorker Rachel Chu to Singapore to meet her boyfriend's family.
+        Actors: Constance Wu, Henry Golding, Michelle Yeoh, Gemma Chan
+        
+        Braveheart
+
+        Release Year: 1995
+        IMDB Rating: 8.4
+        Rotten Tomatoes Rating: 76%
+        Origin Country: USA
+        Available Languages: English, French, Latin, Scottish Gaelic, Italian
+        Plot: When his secret bride is executed for assaulting an English soldier who tried to rape her, Sir William Wallace begins a revolt against King Edward I of England.
+        Actors: James Robinson, Sean Lawlor, Sandy Nelson, James Cosmo
+        
+        Collateral Beauty
+
+        Release Year: 2016
+        IMDB Rating: 6.8
+        Rotten Tomatoes Rating: 14%
+        Origin Country: USA
+        Available Languages: English
+        Plot: Retreating from life after a tragedy, a man questions the universe by writing to Love, Time and Death. Receiving unexpected answers, he begins to see how these things interlock and how even loss can reveal moments of meaning and beauty.
+        Actors: Will Smith, Edward Norton, Kate Winslet, Michael Peña
+        
+        The Pursuit of Happyness
+
+        Release Year: 2006
+        IMDB Rating: 8.0
+        Rotten Tomatoes Rating: 67%
+        Origin Country: USA
+        Available Languages: English, Cantonese
+        Plot: A struggling salesman takes custody of his son as he's poised to begin a life-changing professional career.
+        Actors: Will Smith, Jaden Smith, Thandie Newton, Brian Howe
+        broken
+        
+        Album: finding it hard to smile 
+        Artist: lovelytheband 
+        Song Sample: https://p.scdn.co/mp3-preview/11a8d7908786342801a29a88753e24ab88ba0813?cid=55d219133dfd4607b562c96e4b8c8844
+broken
+        
+Album: finding it hard to smile 
+Artist: lovelytheband 
+Song Sample: https://p.scdn.co/mp3-preview/11a8d7908786342801a29a88753e24ab88ba0813?cid=55d219133dfd4607b562c96e4b8c8844
+broken
+        
+Album: finding it hard to smile 
+Artist: lovelytheband 
+Song Sample: https://p.scdn.co/mp3-preview/11a8d7908786342801a29a88753e24ab88ba0813?cid=55d219133dfd4607b562c96e4b8c8844
+
+broken
+        
+Album: finding it hard to smile 
+Artist: lovelytheband 
+Song Sample: https://p.scdn.co/mp3-preview/11a8d7908786342801a29a88753e24ab88ba0813?cid=55d219133dfd4607b562c96e4b8c8844
