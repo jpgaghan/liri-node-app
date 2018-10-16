@@ -107,3 +107,9 @@ broken
 Album: finding it hard to smile 
 Artist: lovelytheband 
 Song Sample: https://p.scdn.co/mp3-preview/11a8d7908786342801a29a88753e24ab88ba0813?cid=55d219133dfd4607b562c96e4b8c8844
+
+metallica
+
+Venue Name: Wisconsin Entertainment and Sports Center
+Location: Pittsburgh, PA
+Date: 10/16/2018
